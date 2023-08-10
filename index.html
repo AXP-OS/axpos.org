@@ -103,14 +103,17 @@
                         <br/>
                         <b>Main differences to divestOS are (subset):</b>
                         <br/><br/>
-                        <li>pre-rooted by <a href="https://github.com/sfX-android/android_vendor_extendrom/wiki/EXTENDROM_PREROOT_BOOT-NG" target=_blank>EXTENDROM_PREROOT_BOOT</a></li>
-                        <li>signature spoofing support by <a href="https://github.com/sfX-android/android_vendor_extendrom/wiki/EXTENDROM_SIGNATURE_SPOOFING" target=_blank>EXTENDROM_SIGNATURE_SPOOFING</a></li>
-                        <li>including several apps & configurations (<a href="https://github.com/sfX-android/automation_scripts/blob/ansible/roles/axp/common/defaults/main.yml#L28" target=_blank>extendrom_package_list</a>) by <a href="https://github.com/sfX-android/android_vendor_extendrom/wiki/EXTENDROM_PACKAGES">EXTENDROM_PACKAGES</a></li>
-                        <li>increased <a href="https://github.com/sfX-android/automation_scripts/blob/ansible/roles/axp/common/defaults/main.yml#L42-L44" target=_blank>key size + hash</a> for signing keys wherever possible</li>
-                        <li>boot debug log added (<a href="https://github.com/sfX-android/android_vendor_extendrom/wiki/EXTENDROM_BOOT_DEBUG" target=_blank>EXTENDROM_BOOT_DEBUG</a>)</li>
-                        <li>increased usability by device specific hand-picked adjustments</li>
+			<ul>
+			<li>pre-rooted by <a href="https://github.com/sfX-android/android_vendor_extendrom/wiki/EXTENDROM_PREROOT_BOOT-NG" target=_blank>EXTENDROM_PREROOT_BOOT</a></li>
+			<li>signature spoofing support by <a href="https://github.com/sfX-android/android_vendor_extendrom/wiki/EXTENDROM_SIGNATURE_SPOOFING" target=_blank>EXTENDROM_SIGNATURE_SPOOFING</a></li>
+			<li>including several apps & configurations (<a href="https://github.com/sfX-android/automation_scripts/blob/ansible/roles/axp/common/defaults/main.yml#L28" target=_blank>extendrom_package_list</a>) by <a href="https://github.com/sfX-android/android_vendor_extendrom/wiki/EXTENDROM_PACKAGES">EXTENDROM_PACKAGES</a></li>
+			<li>increased <a href="https://github.com/sfX-android/automation_scripts/blob/ansible/roles/axp/common/defaults/main.yml#L42-L44" target=_blank>key size + hash</a> for signing keys wherever possible</li>
+			<li>boot debug log added (<a href="https://github.com/sfX-android/android_vendor_extendrom/wiki/EXTENDROM_BOOT_DEBUG" target=_blank>EXTENDROM_BOOT_DEBUG</a>)</li>
+			<li>increased usability by device specific hand-picked adjustments</li>
 			<li><a href="https://microg.org/" target=_blank>microG</a> included (signature spoofing must be explicitly enabled)</li>
 			<li>microG compatible Google Play included (signature spoofing must be explicitly enabled)</li>
+			<li>WireGuard VPN <a href="https://www.wireguard.com/compilation" target=_blank>Kernel module</a></li>
+			</ul>
                         <br/>
                         <br/>
 
