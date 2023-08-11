@@ -59,8 +59,8 @@
                             <div class="classynav">
                                 <ul>
                                     <li><a href="index.html">Home</a></li>
-				    <li><a href="https://github.com/AXP-OS/build/wiki/build" target=_blank>Build</a></li>
-				    <li><a href="https://github.com/AXP-OS" target=_blank>Sources</a></li>
+				   <li><a href="https://github.com/AXP-OS/build/wiki/build" target=_blank>Build</a></li>
+				   <li><a href="https://github.com/AXP-OS" target=_blank>Sources</a></li>
                                     <li><a href="dl.html">Download</a></li>
                                 </ul>
 
@@ -101,18 +101,22 @@
                         AXP.OS (short for "Advanced XPerience OS") is a more private and more secure aftermarket mobile operating system based on <a href="https://divestos.org" target=_blank>DivestOS</a>.<br/>
                         
                         <br/>
-                        <b>Main differences to divestOS are (subset):</b>
+                        <b>AXP.OS compared to divestOS (subset):</b>
                         <br/><br/>
 			<ul>
-			<li>pre-rooted by <a href="https://github.com/sfX-android/android_vendor_extendrom/wiki/EXTENDROM_PREROOT_BOOT-NG" target=_blank>EXTENDROM_PREROOT_BOOT</a></li>
-			<li>signature spoofing support by <a href="https://github.com/sfX-android/android_vendor_extendrom/wiki/EXTENDROM_SIGNATURE_SPOOFING" target=_blank>EXTENDROM_SIGNATURE_SPOOFING</a></li>
-			<li>including several apps & configurations (<a href="https://github.com/sfX-android/automation_scripts/blob/ansible/roles/axp/common/defaults/main.yml#L28" target=_blank>extendrom_package_list</a>) by <a href="https://github.com/sfX-android/android_vendor_extendrom/wiki/EXTENDROM_PACKAGES">EXTENDROM_PACKAGES</a></li>
-			<li>increased <a href="https://github.com/sfX-android/automation_scripts/blob/ansible/roles/axp/common/defaults/main.yml#L42-L44" target=_blank>key size + hash</a> for signing keys wherever possible</li>
-			<li>boot debug log added (<a href="https://github.com/sfX-android/android_vendor_extendrom/wiki/EXTENDROM_BOOT_DEBUG" target=_blank>EXTENDROM_BOOT_DEBUG</a>)</li>
-			<li>increased usability by device specific hand-picked adjustments</li>
-			<li><a href="https://microg.org/" target=_blank>microG</a> included (signature spoofing must be explicitly enabled)</li>
-			<li>microG compatible Google Play included (signature spoofing must be explicitly enabled)</li>
-			<li>WireGuard VPN <a href="https://www.wireguard.com/compilation" target=_blank>Kernel module</a></li>
+			<li>= OTA updates</li>
+			<li>= always current <a href="https://source.android.com/docs/security/bulletin" target=_blank>ASB patches</a> (backported where necessary)</li>
+			<li>= hardened and focussing on <a href="https://divestos.org/pages/technical_details#changes" target=_blank>security and privacy</a></li>
+			<li>- eSpeakNG removed</li>
+			<li>+ pre-rooted by <a href="https://github.com/sfX-android/android_vendor_extendrom/wiki/EXTENDROM_PREROOT_BOOT-NG" target=_blank>EXTENDROM_PREROOT_BOOT</a></li>
+			<li>+ signature spoofing support by <a href="https://github.com/sfX-android/android_vendor_extendrom/wiki/EXTENDROM_SIGNATURE_SPOOFING" target=_blank>EXTENDROM_SIGNATURE_SPOOFING</a></li>
+			<li>+ including several apps & configurations (<a href="https://github.com/sfX-android/automation_scripts/blob/ansible/roles/axp/common/defaults/main.yml#L28" target=_blank>extendrom_package_list</a>) by <a href="https://github.com/sfX-android/android_vendor_extendrom/wiki/EXTENDROM_PACKAGES">EXTENDROM_PACKAGES</a></li>
+			<li>+ increased <a href="https://github.com/sfX-android/automation_scripts/blob/ansible/roles/axp/common/defaults/main.yml#L42-L44" target=_blank>key size + hash</a> for signing keys wherever possible</li>
+			<li>+ boot debug log added (<a href="https://github.com/sfX-android/android_vendor_extendrom/wiki/EXTENDROM_BOOT_DEBUG" target=_blank>EXTENDROM_BOOT_DEBUG</a>)</li>
+			<li>+ increased usability by <a href="https://github.com/sfX-android/automation_scripts/tree/ansible/roles/axp/common/templates" target=_blank>device specific</a> hand-picked adjustments</li>
+			<li>+ <a href="https://microg.org/" target=_blank>microG</a> included (signature spoofing must be explicitly enabled)</li>
+			<li>+ microG compatible Google Play included (signature spoofing must be explicitly enabled)</li>
+			<li>+ WireGuard VPN <a href="https://www.wireguard.com/compilation" target=_blank>Kernel module</a></li>
 			</ul>
                         <br/>
                         <br/>
@@ -139,7 +143,24 @@
                         <h4>
                         AXP.OS is nothing for the average user! You really have to know what you are doing as it comes with several features which can EASILY brick your device.<br/><br/>
                         Not just that but if you get infected by malware it can cause serious damage to the whole system, your privacy, expose contacts, and cause serious other trouble.<br/><br/>
-                        If you know what you do though, not clicking on every dubious attachment of an Email, not downloading APKs from random websites, think before act and keeping AXP.OS updated, then go on. 
+                        If you know what you do though, not clicking on every dubious attachment of an Email, not downloading APKs from random websites, think before act and keeping AXP.OS updated, then go on.
+			<br/>
+			<br/>
+			<i><b>The main goal of AXP.OS is to provide a security and privacy oriented OS, but trying to keep the balance between these two things and advanced functionality.</b></i><br/>
+			<br/>
+			Ultimate choice for security on Google devices: <a href="https://grapheneos.org" target_blank>GrapheneOS</a><br/>
+			Best alternative for security + privacy on non-Google devices: <a href="https://divestos.org/" target=_blank>divestOS</a><br/>
+			Best alternative for security + privacy on older devices: <a href="https://divestos.org/" target=_blank>divestOS</a><br/>
+			Best alternative for security + privacy + advanced functionality: <b>AXP.OS</b><br/>
+			<br/>
+			<i><b>There are countless custom OS available, each with its own focus. Why using divestOS as base and not eOS, iode, LineageOS or <i>fill-in-your-choice</i>?</b></i> <br/>
+			<br/>
+			divestOS has specialized on the minimum: ASB patches - even for very old systems (e.g. Android 7). For this purpose even a CSV patcher was developed and published. But not only ASB patches are integrated in the Android sources, but also in the kernel - which many developers leave out. 
+			Besides this bare minimum, divestOS comes with countless security optimizations, partly ported from GrapheneOS, partly added by itself or picked from other custom OS.<br/>
+			<br/>
+			All this ensures that even devices running older Android versions get the best possible security and privacy.<br/>
+			<br/>
+			Therefore divestOS as a basis.
                         </h4>
                     </div>
                 </div>
@@ -206,8 +227,8 @@ Image sources: <br/>
                         <nav class="footer-nav">
                             <ul>
                                     <li><a href="index.html">Home</a></li>
-				    <li><a href="https://github.com/AXP-OS/build/wiki/build" target=_blank>Build</a></li>
-				    <li><a href="https://github.com/AXP-OS" target=_blank>Sources</a></li>
+				   <li><a href="https://github.com/AXP-OS/build/wiki/build" target=_blank>Build</a></li>
+				   <li><a href="https://github.com/AXP-OS" target=_blank>Sources</a></li>
                                     <li><a href="dl.html">Download</a></li>
                             </ul>
                         </nav>
